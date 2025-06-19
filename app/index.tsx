@@ -1,9 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar, StyleSheet, Text, View } from 'react-native';
 
 export default function Index() {
 	return (
 		<View style={styles.test}>
-			<Text>Edit app/index.tsx to edit this screen.</Text>
+			<Text>Edit app/index.tsx to edit this screen</Text>
+			<StatusBar />
 		</View>
 	);
 }
