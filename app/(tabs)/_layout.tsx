@@ -2,10 +2,17 @@ import Entypo from '@expo/vector-icons/Entypo';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Tabs } from 'expo-router';
+import { StyleSheet } from 'react-native';
 
 export default function RootLayout() {
 	return (
-		<Tabs screenOptions={{ headerShown: false }}>
+		<Tabs
+			screenOptions={{
+				headerShown: false,
+				tabBarActiveTintColor: 'rgb(200, 200, 200)',
+				tabBarStyle: styles.bar,
+				tabBarLabelStyle: styles.text
+			}}>
 			<Tabs.Screen
 				name='index'
 				options={{
@@ -36,3 +43,13 @@ export default function RootLayout() {
 		</Tabs>
 	);
 }
+
+const styles = StyleSheet.create({
+	bar: {
+		height: 85,
+		backgroundColor: 'rgb(55, 55, 55)'
+	},
+	text: {
+		fontSize: 12
+	}
+});

@@ -10,7 +10,6 @@ export default function Index() {
 
 const styles = StyleSheet.create({
 	test: {
-		backgroundColor: 'rgb(80, 80, 80)',
 		flex: 1,
 		justifyContent: 'center',
 		alignItems: 'center'
