@@ -46,7 +46,7 @@ export default function RootLayout() {
 
 const styles = StyleSheet.create({
 	bar: {
-		height: 85,
+		height: 100,
 		backgroundColor: 'rgb(55, 55, 55)'
 	},
 	text: {

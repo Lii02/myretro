@@ -1,17 +1,19 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function Index() {
 	return (
-		<View style={styles.test}>
-			<Text>Home</Text>
-		</View>
+		<SafeAreaView style={styles.test}>
+			<ScrollView>
+				<Text>Home</Text>
+			</ScrollView>
+		</SafeAreaView>
 	);
 }
 
 const styles = StyleSheet.create({
 	test: {
-		flex: 1,
-		justifyContent: 'center',
-		alignItems: 'center'
+		backgroundColor: 'rgb(50, 50, 50)',
+		flex: 1
 	}
 });
