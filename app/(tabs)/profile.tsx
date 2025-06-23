@@ -1,11 +1,12 @@
+import defaultStyles from '@/styles';
 import { ScrollView, StyleSheet, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-export default function Index() {
+export default function Profile() {
 	return (
 		<SafeAreaView style={styles.test}>
 			<ScrollView>
-				<Text>Profile</Text>
+				<Text style={defaultStyles.header}>Profile</Text>
 			</ScrollView>
 		</SafeAreaView>
 	);

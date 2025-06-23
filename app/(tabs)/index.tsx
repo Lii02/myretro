@@ -1,3 +1,4 @@
+import defaultStyles from '@/styles';
 import { ScrollView, StyleSheet, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -5,7 +6,7 @@ export default function Index() {
 	return (
 		<SafeAreaView style={styles.test}>
 			<ScrollView>
-				<Text>Home</Text>
+				<Text style={defaultStyles.header}>Home</Text>
 			</ScrollView>
 		</SafeAreaView>
 	);
